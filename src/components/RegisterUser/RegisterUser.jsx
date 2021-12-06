@@ -1,20 +1,21 @@
 import { RegisterUserStyled } from "./RegisterUserStyled";
+import { InputStyled } from "../InputsStyled";
+import { ButtonStyled } from "../ButtonStyled";
+import { TitleStyled } from "../TitleStyled";
 
 export const RegisterUser = () => {
-  return (
-    <>
-      <h1>Game Shop</h1>
-      <RegisterUserStyled>
-      <form id="RegisterUserForm">
-        <label htmlFor="name">Nome: </label>
-        <input type="text" name="name" id="name" />
-        <label htmlFor="cost">Preço: </label>
-        <input type="text" name="cost" id="cost" />
-        <label htmlFor="amount">Quantidade: </label>
-        <input type="text" name="amount" id="amount" />
-        <button>Cadastrar</button>
-      </form>
-      </RegisterUserStyled>
-    </>
-  );
+    return (
+        <>
+            <TitleStyled>Game Shop</TitleStyled>
+                <RegisterUserStyled id="RegisterUserForm">
+                    <label htmlFor="name">Nome: </label>
+                    <InputStyled type="text" name="name" id="name" />
+                    <label htmlFor="cost">Preço: </label>
+                    <InputStyled type="text" name="cost" id="cost" />
+                    <label htmlFor="amount">Quantidade: </label>
+                    <InputStyled type="text" name="amount" id="amount" />
+                    <ButtonStyled>Cadastrar</ButtonStyled>
+                </RegisterUserStyled>
+        </>
+    );
 };
